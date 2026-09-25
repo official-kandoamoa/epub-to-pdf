@@ -1,4 +1,4 @@
-**AI-assisted development disclosure:** This project was heavily developed with assistance from ChatGPT, Grok, and/or Claude. The author used the free versions of these large language models. AI-generated suggestions were reviewed, adapted, and tested by the author, but the project may still contain errors or limitations.
+**AI development disclosure:** This project was developed with assistance from the free versions of ChatGPT, Grok, and Claude (LLMs), with the user providing ideas and testing while the AIs and user collaboratively suggested, generated, reviewed, and refined code and solutions.
 
 # EPUB to PDF Converter with Internal Link Preservation
 
