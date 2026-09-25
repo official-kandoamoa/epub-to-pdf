@@ -1,3 +1,18 @@
+# Project No Longer Maintained
+
+This project is no longer maintained.
+
+I originally created this Python-based EPUB-to-PDF converter for **Termux on Android**, because I believed that tools such as **WeasyPrint** and **Calibre** could not be used properly in Termux.
+
+I later discovered that they can be installed and used through a **PRoot Distro environment**, making this project unnecessary for its original purpose.
+
+The repository is kept for reference, but no further development or maintenance is planned.
+
+---
+
+Status: 🛑 No longer maintained 
+
+---
 **AI development disclosure:** This project was developed with assistance from the free versions of ChatGPT, Grok, and Claude (LLMs), with the user providing ideas and testing while the AIs and user collaboratively suggested, generated, reviewed, and refined code and solutions.
 
 # EPUB to PDF Converter with Internal Link Preservation
