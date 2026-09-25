@@ -1,4 +1,4 @@
-# epub-to-pdf
+# EPUB to PDF Converter with Internal Link Preservation
 
 Convert an EPUB book into a single, well-formed PDF — with working internal
 links, a detected or chosen page size, and a rendering engine that works even
