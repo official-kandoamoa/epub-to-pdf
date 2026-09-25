@@ -1,3 +1,5 @@
+**AI-assisted development disclosure:** This project was heavily developed with assistance from ChatGPT, Grok, and/or Claude. The author used the free versions of these large language models. AI-generated suggestions were reviewed, adapted, and tested by the author, but the project may still contain errors or limitations.
+
 # EPUB to PDF Converter with Internal Link Preservation
 
 Convert an EPUB book into a single, well-formed PDF — with working internal
