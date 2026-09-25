@@ -8,6 +8,71 @@ I later discovered that they can be installed and used through a **PRoot Distro 
 
 The repository is kept for reference, but no further development or maintenance is planned.
 
+do this instead of using this ugly python script:
+
+# Comprehensive Guide: Convert EPUB to PDF Using Debian in Termux
+
+This guide walks you through installing **Debian** inside Termux via PRoot, updating the environment, installing **Calibre**, and performing the **EPUB-to-PDF conversion**.
+
+---
+
+### Phase 1: Install Debian in Termux
+
+1. **Update the Termux environment:**
+   ```bash
+   pkg update && pkg upgrade -y
+   ```
+
+2. **Install `proot-distro`:**
+   ```bash
+   pkg install proot-distro -y
+   ```
+
+3. **Install the Debian distribution:**
+   ```bash
+   proot-distro install debian
+   ```
+
+4. **Log into the Debian environment:**
+   ```bash
+   proot-distro login debian
+   ```
+
+---
+
+### Phase 2: Update Debian & Install Calibre
+
+Once you are logged into Debian (indicated by the `root@debian:~#` prompt), run the following commands:
+
+1. **Update and upgrade the Debian system:**
+   ```bash
+   apt update && apt upgrade -y
+   ```
+
+2. **Install Calibre:**
+   ```bash
+   apt install calibre -y
+   ```
+
+---
+
+### Phase 3: Convert the eBook
+
+Because PRoot does not support the Chromium sandbox required by Calibre's web engine component, you must explicitly disable the sandbox using the environment variable flag.
+
+* Run the conversion command directly inside your Debian environment:
+  ```bash
+  QTWEBENGINE_DISABLE_SANDBOX=1 ebook-convert input.epub output.pdf
+  ```
+
+---
+
+### Useful Tips
+* **File Sharing:** Your Termux files and phone storage are located outside the isolated Debian environment. To easily access your phone storage inside Debian, exit back to Termux and run `termux-setup-storage`. You can then find your files in Termux under `/data/data/com.termux/files/home/storage/`.
+* **Exiting Debian:** When you are done, simply type `exit` to return to the standard Termux terminal.
+* **Creating Link To Termux Home: `ln -s /data/data/com.termux/files/home/ ~`, this will create link to your termux home directly**
+
+
 ---
 
 Status: 🛑 No longer maintained 
